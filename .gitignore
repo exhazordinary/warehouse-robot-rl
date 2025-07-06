@@ -26,7 +26,6 @@ var/
 # Virtual environments
 .env
 .venv
-env/
 venv/
 ENV/
 env.bak/
@@ -77,6 +76,7 @@ dmypy.json
 .DS_Store
 
 # Model checkpoints
+!ppo_warehouse_robot.zip
 *.zip
 
 # TensorBoard logs
