@@ -1,3 +1,34 @@
+# ==========================================
+# ✅ INCLUDE IMPORTANT FILES FOR YOUR PROJECT
+# ==========================================
+
+# 🧠 Model checkpoint: allow ppo_warehouse_robot.zip
+!ppo_warehouse_robot.zip
+
+# ✅ Source code and configs
+!*.py
+!*.yaml
+!*.yml
+!*.txt
+!*.md
+
+# ✅ Training scripts, evaluation, and gym envs
+!train.py
+!evaluate.py
+!warehouse_robot_env.py
+
+# ✅ Jupyter Notebooks (optional)
+!*.ipynb
+
+# ✅ Docker and GitHub Actions (if used)
+!Dockerfile
+!docker-compose.yml
+!.github/
+
+# ==========================================
+# ❌ IGNORE UNNECESSARY / GENERATED FILES
+# ==========================================
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -66,21 +97,27 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# VSCode
+# IDE files
 .vscode/
-
-# PyCharm
 .idea/
 
 # MacOS
 .DS_Store
 
-# Model checkpoints
-!ppo_warehouse_robot.zip
+# Unused zip files (exclude your model zip)
 *.zip
+!ppo_warehouse_robot.zip
 
 # TensorBoard logs
 ppo_warehouse_tensorboard/
 
-# Misc
+# Logs
 *.log
+
+# NumPy data files
+*.npz
+*.npy
+
+# Gym monitor logs
+monitor.csv
+monitor.json
