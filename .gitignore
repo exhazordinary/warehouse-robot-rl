@@ -1,0 +1,13 @@
+# Ignore everything
+*
+
+# But not these files/folders:
+!train.py
+!evaluate.py
+!config.py
+!utils.py
+!requirements.txt
+!README.md
+!.gitignore
+!env/
+!env/**
